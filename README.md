@@ -21,7 +21,7 @@ This project focuses on analyzing the sentiment of tweets using machine learning
 
 The dataset used for training the model contains 1.6 million tweets labeled as positive (1) or negative (0). You can download the dataset from the following link:
 
-### Download Dataset - https://www.kaggle.com/datasets/kazanova/sentiment140
+### Download Dataset - https://drive.google.com/file/d/1XoS6xebJJCk2ZD5qHZQxrC6-zlvQZBY9/view?usp=sharing
 
 Installation
 
