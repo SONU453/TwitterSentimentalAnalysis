@@ -1,0 +1,5 @@
+pred_trained_model.sav
+tfidf_vectorizer.pkl
+training.1600000.processed.noemoticon.csv
+twitter_stemmed_data.csv
+.ipynb_checkpoints/
