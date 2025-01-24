@@ -27,11 +27,11 @@ Installation
 
 Follow these steps to set up and run the project:
 
-Clone the repository:
+### Clone the repository:
 
-git clone https://github.com/mohdajeem/Twitter-Sentiment-Analysis.git 
-
-cd twitter-sentiment-analysis
+     git clone https://github.com/mohdajeem/Twitter-Sentiment-Analysis.git 
+     
+     cd twitter-sentiment-analysis
 
 ### Install dependencies:
 
