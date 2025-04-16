@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Twitter Sentiment Analysis
 
 This project focuses on analyzing the sentiment of tweets using machine learning. The goal is to classify tweets as either positive or negative using Natural Language Processing (NLP) techniques and machine learning models.
@@ -107,3 +108,6 @@ Run jupyter notebook and run jupyter files
 
 # Author:- 
     Mohd ajeem
+=======
+# TwitterSentimentalAnalysis
+>>>>>>> 5903739659b4de5e258451bd64e71d883751b69f

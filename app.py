@@ -8,6 +8,13 @@ from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
 import nltk
+# nltk.data.path.append('C:/Users/aditi gupta/nltk_data')
+# nltk.download('stopwords', download_dir='C:/Users/aditi gupta/nltk_data')
+# nltk.download('punkt', download_dir='C:/Users/aditi gupta/nltk_data')
+# nltk.download('wordnet', download_dir='C:/Users/aditi gupta/nltk_data')
+
+# import nltk
+nltk.data.path.append('C:/Users/aditi gupta/nltk_data')
 
 # Load the model and vectorizer
 model_filename = 'pred_trained_model.sav'
@@ -81,4 +88,4 @@ if st.button("Predict Sentiment"):
     else:
         st.warning("Please enter a tweet.")
 
-# Run the app using the command: streamlit run app.py
+# Run the app using the command: streamlit run app.py 
