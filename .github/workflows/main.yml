@@ -1,0 +1,33 @@
+name: CI/CD for Streamlit Sentiment App
+
+on:
+  push:
+    branches:
+      - main  # or your deployment branch
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 Checkout repository
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set up Python (for safety if needed)
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+
+      - name: 🔐 Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: 🐳 Build and tag Docker image
+        run: |
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/sentiment-app:latest .
+
+      - name: 📤 Push image to Docker Hub
+        run: |
+          docker push ${{ secrets.DOCKER_USERNAME }}/sentiment-app:latest
